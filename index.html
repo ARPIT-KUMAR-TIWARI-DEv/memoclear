@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>MemoClear® - #1 Memory & Brain Supplement for Mental Clarity</title>
+  <meta name="description" content="MemoClear is the premium cognitive supplement that sharpens focus, boosts memory recall, and eliminates mental fog. Try risk-free with 60-day money-back guarantee.">
+  <meta name="keywords" content="MemoClear, MemoClear official website, MemoClear buy, MemoClear official site, MemoClear review, MemoClear supplement">
+  <link rel="canonical" href="https://memorysvitali.us/">
+  <link rel="icon" type="image/webp" href="images/3-frascos-53.png">
+  <link rel="apple-touch-icon" href="images/MemoClear.webp">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MemoClear - #1 Memory & Brain Supplement">
+  <meta property="og:description" content="Sharpen focus, boost memory recall, eliminate mental fog. Try MemoClear risk-free today!">
+  <meta property="og:image" content="https://memorysvitali.us/images/MemoClear.webp">
+  <meta property="og:url" content="https://memorysvitali.us/">
+  <meta property="og:type" content="product">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MemoClear - #1 Memory & Brain Supplement">
+  <meta name="twitter:description" content="Sharpen focus, boost memory recall, eliminate mental fog.">
+  <meta name="twitter:image" content="https://memorysvitali.us/images/MemoClear.webp">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Product",
+        "name": "MemoClear",
+        "description": "Premium cognitive supplement for memory, focus and mental clarity",
+        "brand": { "@type": "Brand", "name": "MemoClear" },
+        "offers": {
+          "@type": "Offer",
+          "price": "49",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://memorysvitali.us/Order"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "2847"
+        }
+      },
+      {
+        "@type": "Organization",
+        "name": "MemoClear",
+        "url": "https://memorysvitali.us/",
+        "logo": "https://memorysvitali.us/images/MemoClear.webp"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does MemoClear really work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, MemoClear is backed by clinical research with natural ingredients proven to support cognitive function, memory recall and mental clarity."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== PURCHASE NOTIFICATION POPUP ===== -->
+<div id="purchase-popup" class="purchase-popup" role="alert" aria-live="polite">
+  <div class="popup-inner">
+    <img src="images/review1.webp" alt="Customer" class="popup-avatar" loading="lazy">
+    <div class="popup-text">
+      <strong id="popup-name">Sarah M.</strong> from <span id="popup-city">Austin, TX</span>
+      <p>Just ordered 6 Bottles! 🎉</p>
+    </div>
+    <button class="popup-close" onclick="closePurchasePopup()" aria-label="Close">✕</button>
+  </div>
+</div>
+
+<!-- ===== EXIT INTENT / SCROLL POPUP ===== -->
+<div id="exit-popup" class="exit-popup-overlay" role="dialog" aria-modal="true" aria-labelledby="exit-popup-title">
+  <div class="exit-popup-box">
+    <button class="exit-popup-close" onclick="closeExitPopup()" aria-label="Close popup">
+      <a href="/Order">✕</a>
+    </button>
+    <div class="exit-popup-badge">⚠️ WAIT!</div>
+    <h3 id="exit-popup-title">Don't Leave Without Your Discount!</h3>
+    <p>Your memory is your most valuable asset. <strong>Claim your 50% OFF</strong> before this offer expires!</p>
+    <div class="exit-timer-mini" id="exit-timer-mini">09:58</div>
+    <a href="/Order" class="exit-popup-cta">🧠 Claim My Discount Now</a>
+    <p class="exit-popup-small">60-Day Money Back Guarantee · No Risk</p>
+  </div>
+</div>
+
+<!-- ===== SECTION 1: NAVIGATION ===== -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="/" class="nav-logo" aria-label="MemoClear Home">
+      <img src="images/2-frascos-70.png" alt="MemoClear Logo" class="logo-img" loading="eager">
+      <span class="logo-text">Memo<span class="logo-accent">Clear</span></span>
+    </a>
+    <nav class="nav-links" id="nav-links" role="navigation" aria-label="Main navigation">
+      <a href="#how-it-works" class="nav-link">How It Works?</a>
+      <a href="#ingredients" class="nav-link">Ingredients</a>
+      <a href="#benefits" class="nav-link">Benefits</a>
+      <a href="/Order" class="nav-cta-btn">Order Now 🛒</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== SECTION 2: HERO ===== -->
+<main>
+<section class="hero-section" id="hero">
+  <div class="hero-particles" id="hero-particles"></div>
+  <div class="hero-container">
+    <div class="hero-image-col">
+      <div class="hero-bottle-wrap">
+        <div class="hero-glow"></div>
+        <img src="images/2-frascos-70.png" alt="MemoClear Brain Supplement Bottle" class="hero-bottle" id="hero-bottle" loading="eager">
+        <div class="hero-badge hero-badge-1">🧠 Clinically Tested</div>
+        <div class="hero-badge hero-badge-2">⭐ 4.9/5 Rating</div>
+        <div class="hero-badge hero-badge-3">🔬 Natural Formula</div>
+      </div>
+    </div>
+    <div class="hero-content-col">
+      <div class="hero-tag">🌟 #1 Cognitive Performance Supplement</div>
+      <h1 class="hero-h1">Unlock Your Brain's <span class="hero-highlight">Full Potential</span> — Remember More, Think Faster, Focus Longer</h1>
+      <p class="hero-desc">Are <strong>memory lapses</strong>, mental fog, and declining concentration holding you back? MemoClear's breakthrough formula targets the root causes of cognitive decline — giving you the sharp, clear mind you deserve. 🚀</p>
+      <p class="hero-desc">Thousands of professionals and seniors trust MemoClear daily to <strong>reclaim their mental edge</strong>, power through demanding tasks, and experience life with crystal-clear clarity. 💡</p>
+      <div class="hero-stars">⭐⭐⭐⭐⭐ <span>4.9/5 from 2,847+ verified reviews</span></div>
+      <a href="/Order" class="hero-cta-btn">🛒 Order Now for Just $49/Bottle</a>
+      <p class="hero-sub">✅ 60-Day Money Back Guarantee &nbsp;|&nbsp; 🚚 Free US Shipping on 6 Bottles</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 3: WHY CHOOSE US ===== -->
+<section class="why-section" id="why">
+  <div class="container">
+    <h2 class="section-heading">Why Choose <span>MemoClear</span>? 🏆</h2>
+    <p class="section-sub">Every bottle is crafted with uncompromising standards for your safety and results.</p>
+    <div class="why-grid">
+      <div class="why-card" data-aos>
+        <div class="why-card-img-wrap">
+          <img src="images/madeinusa.webp" alt="Made in USA - MemoClear manufactured in America" loading="lazy">
+        </div>
+        <h3>🇺🇸 Made in USA</h3>
+        <p>Proudly <strong>manufactured in the United States</strong> in a state-of-the-art facility. Every batch is produced under strict domestic quality controls, ensuring you get only the finest cognitive support supplement available.</p>
+      </div>
+      <div class="why-card" data-aos>
+        <div class="why-card-img-wrap">
+          <img src="images/naturalproduct.webp" alt="100% Natural Premium Quality Ingredients" loading="lazy">
+        </div>
+        <h3>🌿 100% Natural</h3>
+        <p>MemoClear uses <strong>premium natural ingredients</strong> sourced from trusted, ethical suppliers. Zero artificial additives, zero fillers — just pure, potent botanicals and nutrients that your brain actually needs to thrive.</p>
+      </div>
+      <div class="why-card" data-aos>
+        <div class="why-card-img-wrap">
+          <img src="images/gmp.webp" alt="GMP Certified Quality Tested" loading="lazy">
+        </div>
+        <h3>✅ GMP Certified</h3>
+        <p>Our facility holds <strong>Good Manufacturing Practice (GMP) certification</strong>, the gold standard in supplement production. Every capsule undergoes rigorous third-party testing for purity, potency, and consistency before reaching you.</p>
+      </div>
+      <div class="why-card" data-aos>
+        <div class="why-card-img-wrap">
+          <img src="images/fda.webp" alt="FDA Approved Facility Safety Guaranteed" loading="lazy">
+        </div>
+        <h3>🏛️ FDA Registered</h3>
+        <p>Produced in an <strong>FDA-registered facility</strong> following all federal safety guidelines. You can take MemoClear with complete confidence, knowing every bottle meets the highest regulatory safety standards in the industry.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 4: WHAT IS MemoClear ===== -->
+<section class="what-is-section" id="what-is">
+  <div class="container">
+    <div class="what-is-grid">
+      <div class="what-is-img-col" data-aos>
+        <div class="what-is-img-wrap">
+          <img src="images/3-frascos-53.png" alt="MemoClear Brain Support Supplement" loading="lazy">
+          <div class="what-is-img-badge">🧬 Advanced Formula</div>
+        </div>
+      </div>
+      <div class="what-is-text-col" data-aos>
+        <div class="section-label">🔬 The Science Behind the Clarity</div>
+        <h2>What is <span>MemoClear</span>?</h2>
+        <p>MemoClear is a <strong>cutting-edge nootropic supplement</strong> meticulously formulated to address the most frustrating cognitive challenges of modern life. Whether you're struggling with embarrassing memory gaps, afternoon brain fog, or that maddening inability to concentrate — MemoClear was designed specifically for you. 🧠</p>
+        <p>At its core, MemoClear combines <strong>12 scientifically-validated ingredients</strong> — including powerful adaptogens, essential phospholipids, and neuroprotective antioxidants — working synergistically to nourish your neurons, optimize neurotransmitter balance, and enhance the brain's natural plasticity.</p>
+        <p>Unlike cheap, single-ingredient "brain pills," MemoClear's <strong>multi-pathway approach</strong> tackles cognitive decline from every angle: improving blood flow to the brain, reducing neuroinflammation, boosting acetylcholine production, and protecting against oxidative damage. The result? <strong>Sharper thinking, faster recall, and unstoppable focus</strong> — starting within weeks. 💪</p>
+        <a href="/Order" class="btn-primary">Discover My Clarity →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 5: HOW IT WORKS ===== -->
+<section class="how-works-section" id="how-it-works">
+  <div class="container">
+    <div class="section-label-center">⚙️ The 5-Step Mechanism</div>
+    <h2 class="section-heading">How Does <span>MemoClear</span> Work?</h2>
+    <p class="section-sub">MemoClear's proprietary formula works through five powerful pathways to restore and supercharge your cognitive performance.</p>
+    <div class="accordion-list" id="how-accordion">
+      <div class="accordion-item" data-aos>
+        <button class="accordion-btn" aria-expanded="false">
+          <span class="acc-icon">🔋</span>
+          <span>Step 1: Neurotransmitter Optimization</span>
+          <span class="acc-arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <p>MemoClear's first line of action is <strong>boosting acetylcholine</strong> — the brain's primary memory neurotransmitter. Ingredients like Alpha-GPC and Bacopa Monnieri dramatically increase acetylcholine synthesis, enabling faster signal transmission between neurons. This translates directly into <strong>quicker information retrieval, sharper learning, and improved working memory</strong>. Most users notice a significant improvement in recall speed within the first 2-3 weeks.</p>
+        </div>
+      </div>
+      <div class="accordion-item" data-aos>
+        <button class="accordion-btn" aria-expanded="false">
+          <span class="acc-icon">🩸</span>
+          <span>Step 2: Cerebral Blood Flow Enhancement</span>
+          <span class="acc-arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <p>Your brain consumes 20% of your body's energy but receives only the blood flow you give it. MemoClear contains <strong>Ginkgo Biloba and Vinpocetine</strong> — two proven vasodilators that increase cerebral circulation by up to 25%. More blood means more oxygen and glucose delivered to your neurons, resulting in <strong>dramatically reduced brain fog, enhanced mental stamina, and the ability to sustain peak cognitive performance</strong> for hours longer than before.</p>
+        </div>
+      </div>
+      <div class="accordion-item" data-aos>
+        <button class="accordion-btn" aria-expanded="false">
+          <span class="acc-icon">🛡️</span>
+          <span>Step 3: Neuroinflammation Reduction</span>
+          <span class="acc-arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <p>Chronic low-grade brain inflammation is one of the leading — yet least discussed — causes of cognitive decline. MemoClear's <strong>Lion's Mane Mushroom and Curcumin complex</strong> powerfully suppresses neuroinflammatory pathways, protecting your neurons from damage while simultaneously stimulating Nerve Growth Factor (NGF) production. This means your brain doesn't just feel clearer today — it's <strong>actively rebuilding and strengthening its neural networks</strong> for the long term.</p>
+        </div>
+      </div>
+      <div class="accordion-item" data-aos>
+        <button class="accordion-btn" aria-expanded="false">
+          <span class="acc-icon">⚡</span>
+          <span>Step 4: Mitochondrial Energy Boost</span>
+          <span class="acc-arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <p>Mental fatigue isn't weakness — it's your brain cells running low on energy. MemoClear includes <strong>Acetyl-L-Carnitine and CoQ10</strong>, which directly fuel your neurons' mitochondria (the cellular powerhouses). The result is a <strong>sustained, jitter-free cognitive energy boost</strong> — without the crash of caffeine or stimulants. Users report hours of clear-headed productivity and the ability to tackle complex mental tasks that previously felt overwhelming. 🔥</p>
+        </div>
+      </div>
+      <div class="accordion-item" data-aos>
+        <button class="accordion-btn" aria-expanded="false">
+          <span class="acc-icon">🌊</span>
+          <span>Step 5: Stress-Cortisol Balance</span>
+          <span class="acc-arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <p>Chronic stress is a silent brain destroyer — elevated cortisol literally shrinks the hippocampus (your memory center). MemoClear's <strong>Ashwagandha KSM-66® and L-Theanine</strong> work together to normalize your cortisol response, promote calm alertness, and protect your memory centers from stress-induced damage. The outcome is a <strong>composed, focused mind</strong> that performs brilliantly under pressure — whether it's a major presentation, a critical exam, or any high-stakes cognitive challenge. 🧘</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 6: CUSTOMER REVIEWS ===== -->
+<section class="reviews-section" id="reviews">
+  <div class="container">
+    <div class="section-label-center">💬 Real People, Real Results</div>
+    <h2 class="section-heading"><span>MemoClear</span> Customer Reviews</h2>
+    <p class="section-sub">Join over 2,800+ satisfied customers who transformed their cognitive performance.</p>
+    <div class="reviews-grid">
+      <article class="review-card" data-aos>
+        <div class="review-top">
+          <img src="images/review1.webp" alt="David Chen - MemoClear customer review" class="review-avatar" loading="lazy">
+          <div>
+            <h4>David Chen</h4>
+            <p class="review-location">📍 San Francisco, CA</p>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <p>"I'm a software engineer and my memory was letting me down during code reviews. After just <strong>3 weeks on MemoClear</strong>, I'm retaining complex logic, recalling variable names instantly, and my team has actually noticed how much sharper I've become. This is the real deal! 🚀"</p>
+        <div class="review-verified">✅ Verified Purchase</div>
+      </article>
+      <article class="review-card" data-aos>
+        <div class="review-top">
+          <img src="images/review2.webp" alt="Margaret Williams - MemoClear customer review" class="review-avatar" loading="lazy">
+          <div>
+            <h4>Margaret Williams</h4>
+            <p class="review-location">📍 Chicago, IL</p>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <p>"At 62, I was terrified I was developing early-stage memory issues. My doctor suggested a supplement and I found MemoClear. After <strong>6 weeks, the fog has completely lifted</strong>. I remember names, dates, appointments effortlessly. I feel 20 years younger mentally! 💫"</p>
+        <div class="review-verified">✅ Verified Purchase</div>
+      </article>
+      <article class="review-card" data-aos>
+        <div class="review-top">
+          <img src="images/review3.webp" alt="James Rodriguez - MemoClear customer review" class="review-avatar" loading="lazy">
+          <div>
+            <h4>James Rodriguez</h4>
+            <p class="review-location">📍 Miami, FL</p>
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <p>"As a law student, information overload was killing my performance. MemoClear changed everything — <strong>my study retention went through the roof</strong>, my concentration during 8-hour exam prep sessions is unwavering, and I passed the bar on my first attempt. I credit this supplement! 🎯"</p>
+        <div class="review-verified">✅ Verified Purchase</div>
+      </article>
+    </div>
+    <div class="reviews-rating-img">
+      <img src="images/5star.webp" alt="MemoClear 5-star rating from 2847 customers" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 7: PRICING ===== -->
+<section class="pricing-section" id="pricing">
+  <div class="container">
+    <div class="section-label-center">⏳ Limited Time Offer</div>
+    <h2 class="section-heading">Limited Time Special Pricing – Act Now! 🔥</h2>
+    <p class="section-sub">Secure Your Reserved MemoClear While Stocks Last</p>
+    <div class="countdown-wrap">
+      <p class="countdown-label">⚡ Offer Expires In:</p>
+      <div class="countdown-timer" id="countdown-timer-1">
+        <div class="time-block"><span id="ct1-m">10</span><small>MIN</small></div>
+        <div class="time-sep">:</div>
+        <div class="time-block"><span id="ct1-s">00</span><small>SEC</small></div>
+      </div>
+    </div>
+    <div class="pricing-grid">
+      <!-- Card 1 -->
+      <div class="pricing-card" data-aos>
+        <div class="pricing-label">BASIC</div>
+        <div class="pricing-bottles">2 BOTTLE</div>
+        <div class="pricing-supply">30 Day Supply</div>
+        <div class="pricing-img-wrap">
+          <img src="images/2-frascos-70.png" alt="MemoClear 2 BOTTLE 30 Day Supply" loading="lazy">
+        </div>
+        <div class="pricing-price-row">
+          <span class="price-old">$99</span>
+          <span class="price-new">$69</span>
+        </div>
+        <div class="price-per">Per Bottle</div>
+        <a href="/Order" class="pricing-cta-btn">Add to Cart 🛒</a>
+        <img src="images/cards.png" alt="Payment methods accepted" class="payment-logos" loading="lazy">
+      </div>
+      <!-- Card 2 - MOST POPULAR -->
+      <div class="pricing-card pricing-card-popular" data-aos>
+        <div class="pricing-badge-popular">⭐ MOST POPULAR</div>
+        <div class="pricing-label">BEST VALUE</div>
+        <div class="pricing-bottles">6 BOTTLES</div>
+        <div class="pricing-supply">180 Day Supply</div>
+        <div class="pricing-img-wrap">
+          <img src="images/6-frascos-55.png" alt="MemoClear 6 Bottles 180 Day Supply" loading="lazy">
+        </div>
+        <div class="pricing-price-row">
+          <span class="price-old">$594</span>
+          <span class="price-new">$294</span>
+        </div>
+        <div class="price-per">Only $49/Bottle</div>
+        <div class="pricing-bonus-badge">🎁 FREE BONUSES</div>
+        <div class="pricing-ship-badge">🚚 FREE US SHIPPING!</div>
+        <a href="/Order" class="pricing-cta-btn pricing-cta-popular">Add to Cart 🛒</a>
+        <img src="images/cards.png" alt="Payment methods accepted" class="payment-logos" loading="lazy">
+      </div>
+      <!-- Card 3 -->
+      <div class="pricing-card" data-aos>
+        <div class="pricing-label">BUNDLE</div>
+        <div class="pricing-bottles">3 BOTTLES</div>
+        <div class="pricing-supply">90 Day Supply</div>
+        <div class="pricing-img-wrap">
+          <img src="images/3-frascos-53.png" alt="MemoClear 3 Bottles 90 Day Supply" loading="lazy">
+        </div>
+        <div class="pricing-price-row">
+          <span class="price-old">$297</span>
+          <span class="price-new">$177</span>
+        </div>
+        <div class="price-per">Only $59/Bottle</div>
+        <div class="pricing-bonus-badge">🎁 FREE BONUSES</div>
+        <a href="/Order" class="pricing-cta-btn">Add to Cart 🛒</a>
+        <img src="images/cards.png" alt="Payment methods accepted" class="payment-logos" loading="lazy">
+      </div>
+    </div>
+    <div class="pricing-stars">
+      <img src="images/5star.webp" alt="5 star rating MemoClear" loading="lazy">
+    </div>
+    
+  </div>
+</section>
+
+
+
+<!-- ===== SECTION 9: INGREDIENTS ===== -->
+<section class="ingredients-section" id="ingredients">
+  <div class="container">
+    <div class="section-label-center">🌿 The Power Behind the Formula</div>
+    <h2 class="section-heading"><span>MemoClear</span> Ingredients</h2>
+    <p class="section-sub">Each ingredient is clinically dosed and chosen for a specific cognitive benefit.</p>
+    <div class="ingredients-grid">
+      <div class="ingredient-card" data-aos>
+        <div class="ing-icon">🍄</div>
+        <h3>Lion's Mane Mushroom</h3>
+        <p>The world's most studied nootropic mushroom, Lion's Mane <strong>stimulates Nerve Growth Factor (NGF)</strong> synthesis, promoting neurogenesis and protecting existing neurons. Clinical studies show significant improvements in mild cognitive impairment after just 16 weeks of supplementation.</p>
+      </div>
+      <div class="ingredient-card" data-aos>
+        <div class="ing-icon">🌿</div>
+        <h3>Bacopa Monnieri</h3>
+        <p>An ancient Ayurvedic herb with <strong>centuries of use as a memory tonic</strong>, Bacopa contains powerful bacosides that repair damaged neurons and enhance synaptic communication. Multiple meta-analyses confirm significant improvements in memory acquisition and retention speed.</p>
+      </div>
+      <div class="ingredient-card" data-aos>
+        <div class="ing-icon">🧬</div>
+        <h3>Alpha-GPC</h3>
+        <p>The most bioavailable form of choline available, Alpha-GPC is a <strong>precursor to acetylcholine</strong> — your brain's primary learning and memory neurotransmitter. It crosses the blood-brain barrier efficiently, delivering immediate boosts to mental clarity, focus, and information processing speed.</p>
+      </div>
+      <div class="ingredient-card" data-aos>
+        <div class="ing-icon">🍃</div>
+        <h3>Ginkgo Biloba</h3>
+        <p>One of the most researched botanicals for cognitive health, Ginkgo <strong>dramatically improves cerebral blood flow</strong> and possesses powerful antioxidant properties. Studies demonstrate improvements in memory, attention, and processing speed, particularly in adults over 40 experiencing age-related cognitive decline.</p>
+      </div>
+      <div class="ingredient-card" data-aos>
+        <div class="ing-icon">💊</div>
+        <h3>Phosphatidylserine</h3>
+        <p>A critical phospholipid that makes up 15% of your brain's cell membranes, PS <strong>supports fluid neuron communication</strong> and is clinically proven to slow age-related memory decline. The FDA has recognized PS's cognitive benefits, making it one of the most credentialed nootropic compounds in existence.</p>
+      </div>
+      <div class="ingredient-card" data-aos>
+        <div class="ing-icon">⚡</div>
+        <h3>Acetyl-L-Carnitine</h3>
+        <p>ALCAR is a mitochondrial energizer that <strong>directly fuels brain cells</strong> with clean, sustained energy. It also acts as an antioxidant against neuronal damage while boosting acetylcholine activity. Particularly effective at reducing mental fatigue and improving performance during prolonged cognitive tasks.</p>
+      </div>
+      <div class="ingredient-card" data-aos>
+        <div class="ing-icon">🌱</div>
+        <h3>Ashwagandha KSM-66®</h3>
+        <p>The gold-standard ashwagandha extract, KSM-66® is clinically validated to <strong>reduce cortisol by up to 28%</strong>, protecting your hippocampus — the brain's memory center — from chronic stress damage. Users experience dramatically reduced anxiety, better sleep quality, and improved cognitive resilience.</p>
+      </div>
+      <div class="ingredient-card" data-aos>
+        <div class="ing-icon">☕</div>
+        <h3>L-Theanine</h3>
+        <p>Found naturally in green tea, L-Theanine promotes <strong>calm, focused alertness</strong> by increasing alpha brain waves without sedation. When combined with the formula's other ingredients, it sharpens concentration, reduces mind-wandering, and creates the ideal cognitive state for deep work and learning.</p>
+      </div>
+      <div class="ingredient-card" data-aos>
+        <div class="ing-icon">🔬</div>
+        <h3>Rhodiola Rosea</h3>
+        <p>An elite adaptogenic herb used by Soviet athletes and cosmonauts, Rhodiola <strong>dramatically reduces mental and physical fatigue</strong> under high-stress conditions. It enhances serotonin and dopamine activity, improving mood, motivation, and the ability to sustain cognitive performance during demanding tasks. 🏋️</p>
+      </div>
+      <div class="ingredient-card" data-aos>
+        <div class="ing-icon">🟡</div>
+        <h3>Vitamin B Complex (B6, B9, B12)</h3>
+        <p>This essential vitamin trio works in concert to <strong>regulate homocysteine levels</strong> — elevated homocysteine is directly linked to brain shrinkage and Alzheimer's risk. B vitamins are also critical co-factors for neurotransmitter synthesis, ensuring optimal production of dopamine, serotonin, and GABA.</p>
+      </div>
+      <div class="ingredient-card" data-aos>
+        <div class="ing-icon">🌊</div>
+        <h3>Omega-3 DHA</h3>
+        <p>DHA comprises 97% of the omega-3 fatty acids in your brain and is the primary structural fat in neuronal membranes. <strong>Adequate DHA is non-negotiable for brain health</strong> — it enables fluid neurotransmission, supports neurogenesis, and has been shown to reduce cognitive decline rate by over 26% in long-term studies.</p>
+      </div>
+      <div class="ingredient-card" data-aos>
+        <div class="ing-icon">🔴</div>
+        <h3>Huperzine A</h3>
+        <p>Derived from Chinese club moss, Huperzine A is an <strong>acetylcholinesterase inhibitor</strong> — meaning it prevents the enzyme that breaks down acetylcholine from doing so too quickly. The result is dramatically elevated acetylcholine levels throughout the day, leading to noticeably superior memory consolidation and recall speed. 🎯</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 10: SCIENTIFIC EVIDENCE ===== -->
+<section class="science-section" id="science">
+  <div class="container">
+    <div class="section-label-center">📚 Research-Backed Results</div>
+    <h2 class="section-heading">Scientific Evidence for <span>MemoClear</span></h2>
+    <p class="section-sub">Every ingredient in MemoClear has been validated by peer-reviewed clinical research.</p>
+    <div class="science-grid">
+      <div class="science-card" data-aos>
+        <div class="science-icon">🍄</div>
+        <h3>Lion's Mane & Neurogenesis</h3>
+        <p>A landmark 2009 study published in <em>Phytotherapy Research</em> demonstrated that <strong>Lion's Mane significantly improved cognitive function scores</strong> in adults with mild cognitive impairment — with improvements disappearing after stopping supplementation, confirming the mushroom's active role. Subsequent research has identified hericenones and erinacines as the compounds responsible for NGF stimulation.</p>
+      </div>
+      <div class="science-card" data-aos>
+        <div class="science-icon">🌿</div>
+        <h3>Bacopa & Memory Consolidation</h3>
+        <p>A 2001 double-blind, randomized controlled trial in <em>Psychopharmacology</em> showed that <strong>Bacopa supplementation significantly improved word recall memory scores</strong> after 12 weeks. A 2016 meta-analysis of 9 studies confirmed Bacopa's consistent positive effects on memory free recall, making it one of the best-evidenced natural memory enhancers.</p>
+      </div>
+      <div class="science-card" data-aos>
+        <div class="science-icon">🧬</div>
+        <h3>Phosphatidylserine & Cognitive Aging</h3>
+        <p>Research published in <em>Aging</em> (2010) found that <strong>PS supplementation improved memory, learning, and processing speed</strong> in older adults by an average of 42% versus placebo. The FDA has issued a Qualified Health Claim for PS stating it "may reduce the risk of dementia and cognitive dysfunction in the elderly."</p>
+      </div>
+      <div class="science-card" data-aos>
+        <div class="science-icon">🌱</div>
+        <h3>Ashwagandha & Cognitive Stress</h3>
+        <p>A 2012 double-blind study in the <em>Indian Journal of Psychological Medicine</em> demonstrated that KSM-66® <strong>reduced cortisol by 27.9% and stress scores by 44%</strong> versus placebo. A 2017 study specifically measured cognitive benefits, showing significant improvements in memory, executive function, and processing speed after 8 weeks of supplementation. 🧘</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 11: MONEY BACK GUARANTEE ===== -->
+<section class="guarantee-section" id="guarantee">
+  <div class="container">
+    <div class="guarantee-grid">
+      <div class="guarantee-img-col" data-aos>
+        <div class="guarantee-img-wrap">
+          <img src="images/moneybackguarantee.webp" alt="MemoClear 60-Day Money Back Guarantee" loading="lazy">
+        </div>
+      </div>
+      <div class="guarantee-text-col" data-aos>
+        <div class="section-label">🛡️ Zero Risk Purchase</div>
+        <h2>60-Day Triple Satisfaction Guarantee</h2>
+        <p>We're so confident in MemoClear's ability to transform your cognitive performance that we back every order with our <strong>industry-leading triple guarantee</strong>.</p>
+        <div class="guarantee-points">
+          <div class="guarantee-point">
+            <div class="gp-icon">💰</div>
+            <div>
+              <h4>Complete Money-Back Assurance</h4>
+              <p>If you're not <strong>completely satisfied</strong> with your results within 60 days — for any reason whatsoever — simply contact us for a full, hassle-free refund. No questions asked, no hoops to jump through.</p>
+            </div>
+          </div>
+          <div class="guarantee-point">
+            <div class="gp-icon">🏆</div>
+            <div>
+              <h4>Uncompromising Quality Guarantee</h4>
+              <p>Every bottle is <strong>third-party tested for purity and potency</strong>. If any bottle ever fails to meet our exact specifications, we'll replace it immediately at no cost to you.</p>
+            </div>
+          </div>
+          <div class="guarantee-point">
+            <div class="gp-icon">❤️</div>
+            <div>
+              <h4>Pay-It-Forward Promise</h4>
+              <p>For every order placed, <strong>we donate a portion</strong> to Alzheimer's research and cognitive health education in underserved communities. Your purchase does double duty. 🌍</p>
+            </div>
+          </div>
+        </div>
+        <a href="/Order" class="btn-primary">Claim My Risk-Free Bottle →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: BENEFITS ===== -->
+<section class="benefits-section" id="benefits">
+  <div class="container">
+    <div class="section-label-center">✨ What You'll Experience</div>
+    <h2 class="section-heading">Benefits of <span>MemoClear</span></h2>
+    <p class="section-sub">A comprehensive cognitive upgrade in one daily supplement.</p>
+    <div class="benefits-grid">
+      <div class="benefit-item" data-aos>
+        <div class="benefit-check">✅</div>
+        <div>
+          <h4>🧠 Superior Memory Recall</h4>
+          <p>Remember names, dates, facts, and details with effortless clarity. Never again experience the embarrassment of a blank mind when you need information most.</p>
+        </div>
+      </div>
+      <div class="benefit-item" data-aos>
+        <div class="benefit-check">✅</div>
+        <div>
+          <h4>🎯 Laser-Sharp Focus</h4>
+          <p>Eliminate distractions and maintain deep, productive concentration for hours. Complete complex tasks faster with greater accuracy and less mental effort.</p>
+        </div>
+      </div>
+      <div class="benefit-item" data-aos>
+        <div class="benefit-check">✅</div>
+        <div>
+          <h4>☁️ Zero Brain Fog</h4>
+          <p>Wake up clear-headed and stay mentally sharp throughout the day. Say goodbye to the hazy, sluggish thinking that sabotages your mornings and afternoons.</p>
+        </div>
+      </div>
+      <div class="benefit-item" data-aos>
+        <div class="benefit-check">✅</div>
+        <div>
+          <h4>⚡ All-Day Mental Energy</h4>
+          <p>Experience sustained, clean cognitive energy without the jitters, crashes, or dependence of caffeine. Fuel demanding mental work from sunrise to sundown.</p>
+        </div>
+      </div>
+      <div class="benefit-item" data-aos>
+        <div class="benefit-check">✅</div>
+        <div>
+          <h4>😌 Stress Resilience</h4>
+          <p>Handle pressure with composure and clarity. MemoClear's adaptogens regulate your stress response, so high-stakes situations sharpen rather than paralyze you.</p>
+        </div>
+      </div>
+      <div class="benefit-item" data-aos>
+        <div class="benefit-check">✅</div>
+        <div>
+          <h4>🧩 Faster Learning Speed</h4>
+          <p>Absorb new information, skills, and concepts at dramatically accelerated rates. Perfect for professionals, students, and anyone committed to continuous growth.</p>
+        </div>
+      </div>
+      <div class="benefit-item" data-aos>
+        <div class="benefit-check">✅</div>
+        <div>
+          <h4>😊 Mood & Motivation Boost</h4>
+          <p>Elevated neurotransmitter balance naturally lifts your mood, drives motivation, and restores the mental enthusiasm and optimism that cognitive fatigue steals away.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 13: SECOND PRICING ===== -->
+<section class="pricing-section pricing-section-2" id="pricing-2">
+  <div class="container">
+    <div class="section-label-center">⏳ Limited Time Offer</div>
+    <h2 class="section-heading">Special Pricing — Order Before It's Gone! 🔥</h2>
+    <p class="section-sub">Secure Your Reserved MemoClear While Stocks Last</p>
+    <div class="countdown-wrap">
+      <p class="countdown-label">⚡ Offer Expires In:</p>
+      <div class="countdown-timer" id="countdown-timer-2">
+        <div class="time-block"><span id="ct2-m">10</span><small>MIN</small></div>
+        <div class="time-sep">:</div>
+        <div class="time-block"><span id="ct2-s">00</span><small>SEC</small></div>
+      </div>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card" data-aos>
+        <div class="pricing-label">BASIC</div>
+        <div class="pricing-bottles">2 BOTTLE</div>
+        <div class="pricing-supply">30 Day Supply</div>
+        <div class="pricing-img-wrap">
+          <img src="images/2-frascos-70.png" alt="MemoClear 2 BOTTLE" loading="lazy">
+        </div>
+        <div class="pricing-price-row">
+          <span class="price-old">$99</span>
+          <span class="price-new">$69</span>
+        </div>
+        <div class="price-per">Per Bottle</div>
+        <a href="/Order" class="pricing-cta-btn">Add to Cart 🛒</a>
+        <img src="images/cards.png" alt="Payment methods" class="payment-logos" loading="lazy">
+      </div>
+      <div class="pricing-card pricing-card-popular" data-aos>
+        <div class="pricing-badge-popular">⭐ MOST POPULAR</div>
+        <div class="pricing-label">BEST VALUE</div>
+        <div class="pricing-bottles">6 BOTTLES</div>
+        <div class="pricing-supply">180 Day Supply</div>
+        <div class="pricing-img-wrap">
+          <img src="images/6-frascos-55.png" alt="MemoClear 6 Bottles" loading="lazy">
+        </div>
+        <div class="pricing-price-row">
+          <span class="price-old">$594</span>
+          <span class="price-new">$294</span>
+        </div>
+        <div class="price-per">Only $49/Bottle</div>
+        <div class="pricing-bonus-badge">🎁 FREE BONUSES</div>
+        <div class="pricing-ship-badge">🚚 FREE US SHIPPING!</div>
+        <a href="/Order" class="pricing-cta-btn pricing-cta-popular">Add to Cart 🛒</a>
+        <img src="images/cards.png" alt="Payment methods" class="payment-logos" loading="lazy">
+      </div>
+      <div class="pricing-card" data-aos>
+        <div class="pricing-label">BUNDLE</div>
+        <div class="pricing-bottles">3 BOTTLES</div>
+        <div class="pricing-supply">90 Day Supply</div>
+        <div class="pricing-img-wrap">
+          <img src="images/3-frascos-53.png" alt="MemoClear 3 Bottles" loading="lazy">
+        </div>
+        <div class="pricing-price-row">
+          <span class="price-old">$297</span>
+          <span class="price-new">$177</span>
+        </div>
+        <div class="price-per">Only $59/Bottle</div>
+        <div class="pricing-bonus-badge">🎁 FREE BONUSES</div>
+        <a href="/Order" class="pricing-cta-btn">Add to Cart 🛒</a>
+        <img src="images/cards.png" alt="Payment methods" class="payment-logos" loading="lazy">
+      </div>
+    </div>
+    <div class="pricing-stars">
+      <img src="images/5star.webp" alt="5 star rating" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 14: FAQ ===== -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-label-center">❓ Got Questions?</div>
+    <h2 class="section-heading"><span>MemoClear</span> Frequently Asked Questions</h2>
+    <div class="faq-list" id="faq-accordion">
+      <div class="faq-item" data-aos>
+        <button class="faq-btn" aria-expanded="false">
+          <span>Does MemoClear really work?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-body">
+          <p>Yes! MemoClear is formulated based on <strong>decades of peer-reviewed neuroscience research</strong>. Every ingredient is clinically dosed and has published human trials supporting its cognitive benefits. Over 2,800 verified customers have reported significant improvements in memory recall, focus, and mental clarity. While individual results vary based on age, lifestyle, and consistency of use, most users begin noticing meaningful improvements within 2-4 weeks. For best results, we recommend a minimum 3-month cycle. 🧠</p>
+        </div>
+      </div>
+      <div class="faq-item" data-aos>
+        <button class="faq-btn" aria-expanded="false">
+          <span>Are there any side effects?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-body">
+          <p>MemoClear is formulated with <strong>100% natural ingredients</strong> and is generally very well tolerated. The vast majority of users experience no adverse effects. As with any supplement, a very small number of users may experience mild initial digestive adjustment. We always recommend consulting your healthcare provider before starting any new supplement, particularly if you're pregnant, nursing, or taking prescription medications. ✅</p>
+        </div>
+      </div>
+      <div class="faq-item" data-aos>
+        <button class="faq-btn" aria-expanded="false">
+          <span>How much does MemoClear cost?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-body">
+          <p>MemoClear is available in three packages to suit your needs and budget: a <strong>1-bottle (30-day) supply for $69</strong>, a <strong>3-bottle (90-day) bundle for $59/bottle ($177 total)</strong>, and our best-value <strong>6-bottle (180-day) package for just $49/bottle ($294 total)</strong> — which also includes free US shipping and 2 exclusive bonus guides. We strongly recommend the 6-bottle package for maximum results and maximum savings. 💰</p>
+        </div>
+      </div>
+      <div class="faq-item" data-aos>
+        <button class="faq-btn" aria-expanded="false">
+          <span>Where can I buy MemoClear safely?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-body">
+          <p>To guarantee you receive <strong>100% authentic MemoClear</strong>, always purchase exclusively through the official website at memorysvitali.us. We do not sell through Amazon, Walmart, or any third-party retailers. This ensures you get the genuine product, the current lowest pricing, and full access to our 60-day money-back guarantee. Beware of counterfeit products sold elsewhere. 🛡️</p>
+        </div>
+      </div>
+      <div class="faq-item" data-aos>
+        <button class="faq-btn" aria-expanded="false">
+          <span>How long until I see results?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-body">
+          <p>Results vary by individual, but here's a typical timeline our customers experience: <strong>Week 1-2</strong> — many users notice improved mental clarity and reduced brain fog. <strong>Week 3-4</strong> — significant improvements in focus duration and memory recall become apparent. <strong>Month 2-3</strong> — full cognitive benefits are typically realized, with noticeable improvements in learning speed, stress resilience, and sustained mental performance. Consistent daily use delivers the best long-term outcomes. 🚀</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 15: FINAL CTA ===== -->
+<section class="final-cta-section" id="final-cta">
+  <div class="final-cta-particles" id="final-particles"></div>
+  <div class="container">
+    <div class="final-cta-inner" data-aos>
+      <div class="final-cta-img-wrap">
+        <div class="final-bottle-glow"></div>
+        <img src="images/3-frascos-53.png" alt="MemoClear 3 Bottles Order Now" class="final-cta-img" loading="lazy">
+      </div>
+      <div class="final-cta-content">
+        <div class="final-urgency-badge">🚨 LIMITED SUPPLY REMAINING</div>
+        <h2 class="final-cta-h2">Don't Wait Any Longer!<br>Order Your Discounted<br><span>MemoClear</span> Now!</h2>
+        <div class="final-price-wrap">
+          <span class="final-price-old">Regular Price: $149</span>
+          <span class="final-price-new">Only For $49/Bottle 🔥</span>
+        </div>
+        <p class="final-cta-desc">Every day you delay is another day of <strong>missed memories, lost productivity, and mental frustration</strong>. Thousands have already made the decision to take back their cognitive power. Now it's your turn. 💪</p>
+        <a href="/Order" class="final-cta-btn">🛒 YES! I Want My Discounted MemoClear Now!</a>
+        <div class="final-cta-guarantees">
+          <span>✅ 60-Day Guarantee</span>
+          <span>🔒 Secure Checkout</span>
+          <span>🚚 Fast Shipping</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== SECTION 16: FOOTER ===== -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand-col">
+        <div class="footer-logo">
+          <img src="images/2-frascos-70.png" alt="MemoClear Logo" loading="lazy">
+          <span>Memory<span class="logo-accent">Vitali</span></span>
+        </div>
+        <p class="footer-tagline">Unlock your brain's full potential with science-backed cognitive support.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+          <a href="#" aria-label="Pinterest" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#ingredients">Ingredients</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="/Order">Order Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <div class="footer-legal-links">
+          <a href="disclaimer.html" class="legal-link">Disclaimer</a>
+          <span class="link-separator">|</span>
+          <a href="terms-and-conditions.html" class="legal-link">Terms of Use</a>
+          <span class="link-separator">|</span>
+          <a href="privacy-policy.html" class="legal-link">Privacy Policy</a>
+          <span class="link-separator">|</span>
+          <a href="blog" class="legal-link">Blog</a>
+        </div>
+        <div class="footer-disclaimer">
+          <p>* These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary. Individual results will vary. Always consult with a qualified healthcare professional prior to beginning any diet or exercise program or taking any dietary supplement.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 MemoClear. All Rights Reserved. | <a href="https://memorysvitali.us/">memorysvitali.us</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to Top -->
+<button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">▲</button>
+
+<script src="script.js"></script>
+
+<script>
+/* Disable Right Click */
+document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+/* Disable Key Shortcuts */
+document.addEventListener('keydown', function(e) {
+  if (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.key === 'c' || e.key === 'v')) { e.preventDefault(); }
+  if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) { e.preventDefault(); }
+  if (e.key === 'F12') { e.preventDefault(); }
+});
+/* Disable Text Selection */
+document.addEventListener('selectstart', function(e) { e.preventDefault(); });
+</script>
+
+</body>
+</html>
